@@ -35,7 +35,7 @@ header nav a:first-child {
     display: inline;
 }
 
-header nav button {
+#burger {
     background-color: black;
     border: none;
     color: white;
@@ -43,6 +43,10 @@ header nav button {
 }
 
 #headerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     background-image: url(../img/la.jpg);
     background-size: cover;
     background-position: center;
@@ -51,4 +55,285 @@ header nav button {
 
 #headerImg p {
     display: none;
+}
+
+/* section band  */
+
+#band div {
+    width: 90%;
+    padding: 3rem 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#band div h1 {
+    margin: 1.5rem 0;
+}
+
+#band div p:first-of-type {
+    margin: 1rem 0;
+    font-style: italic;
+    color: grey;
+}
+
+#band div p:last-of-type {
+    text-align: justify;
+}
+
+#members {
+    display: flex;
+    flex-direction: column;
+}
+
+#members figure {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+#members figure img {
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 2%;
+}
+
+/* section Tour Dates */
+
+#tourDates {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+#tourDates h2 {
+    margin: 1rem;
+}
+
+#month {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: white;
+    color: black;
+}
+
+#month p {
+    padding: 0.5rem;
+}
+
+#month div {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.soldOut {
+    background-color: red;
+    color: white;
+    border-radius: 5%;
+    margin-left: 1rem;
+    padding: 0.2rem 1rem;
+}
+
+#three {
+    background-color: black;
+    color: white;
+    padding: 0.3rem 1rem;
+    margin-left: 11rem;
+    border-radius: 70%;
+}
+
+#dates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.citys {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    background-color: white;
+    color: black;
+    margin: 0.5rem 0;
+}
+
+.citys img {
+    width: 100%;
+}
+
+.citys h3, .citys p, .citys button { 
+    margin: 0.5rem 0.5rem;
+}
+
+.citys button {
+    padding: 0.7rem;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+/* section contact */
+
+#contact div {
+    padding-top: 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contact h2 {
+    margin: 1.5rem;
+}
+
+#infosContact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    padding: 1rem 0;
+}
+
+#contact form {
+    margin: 1rem 0;
+}
+
+#contact input {
+    width: 90%;
+    padding: 0.5rem 0.5rem;
+}
+
+#contact form div {
+    display: flex;
+    justify-content: flex-end;
+    width: 93%;
+    margin: -2rem auto 1rem auto;
+}
+
+#contact form div input {
+    width: 30%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+
+#contactImg img {
+    width: 100%;
+}
+
+footer div {
+    text-align: center;
+    padding: 3.5rem;
+    font-size: 1.2rem;
+}
+
+footer p {
+    margin: 1.5rem;
+}
+
+@media screen and (min-width:576px) {
+
+    #burger { 
+        display: none;
+    }
+
+    header nav ul a, header nav form {
+    display: flex;
+    }
+
+    header nav form input, header nav form button {
+        background-color: black;
+        color: white;
+        border: none;
+    }
+
+    header nav form input:focus {
+        outline: none;
+    }
+
+    header nav form button {
+        margin-right: 1rem;
+    }
+
+    #headerImg {
+        height: 70vh;
+        padding: 2rem 0;
+    }
+
+    #headerImg p {
+        display: block;
+        color: white;
+        margin: 0.5rem 0;
+    }
+
+    #headerImg p:first-child {
+        font-size: 1.5rem;
+    }
+
+    #band div {
+        width: 65%;
+    }
+
+    #members {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #members figure {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    #month {
+        width: 65%;   
+    }
+
+    #three {
+        margin-left: 41rem;
+    }
+
+    #dates {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 65%;
+    }
+
+    .citys {
+        width: 32%;
+        margin: 0 auto;
+    }
+
+    #contact div>div {
+        display: flex;
+        width: 65%;
+    }
+
+    #infosContact {
+        width: 65%;
+    }
+
+    
+    #contact form {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+
+    #contact input {
+        width: 42%;
+        margin: 0.5rem;
+    }
+
+    #contact input:nth-child(3) {
+        width: 91%;
+    }
+
 }

@@ -1,45 +1,144 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>THE BAND</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <a href=""><li>HOME</li></a>
-                    <a href=""><li>BAND</li></a>
-                    <a href=""><li>TOUR</li></a>
-                    <a href=""><li>CONTACT</li></a>
-                    <a href=""><li>MORE
-                        <ul>
-                            <li>Merchandise</li>
-                            <li>Extras</li>
-                            <li>Media</li>
-                        </ul>
-                    </li></a>
-                </ul>
-                <form action="">
-                    <input type="text">
-                    <button type="submit"></button>
-                </form>
-                <button><i class="fa-solid fa-bars"></i></button>
-            </nav>
-            <div id="headerImg">
-                <p>Los Angeles</p>
-                <p>We haf the best time playing at Venice Beach!</p>
-            </div>
-        </header>
-        <main>
-             
-        </main>
-        <footer>
 
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BAND</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="">
+                    <li>HOME</li>
+                </a>
+                <a href="">
+                    <li>BAND</li>
+                </a>
+                <a href="">
+                    <li>TOUR</li>
+                </a>
+                <a href="">
+                    <li>CONTACT</li>
+                </a>
+                <a href="">
+                    <li>MORE</li>
+                </a>
+            </ul>
+            <form action="">
+                <input type="text">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div id="burger"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+        <div id="headerImg">
+            <p>Los Angeles</p>
+            <p>We haf the best time playing at Venice Beach!</p>
+        </div>
+    </header>
+    <main>
+        <section id="band">
+            <div>
+                <h1>THE BAND</h1>
+                <p>We love music</p>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos porro rerum repudiandae
+                    omnis impedit illum quia iusto. Est, excepturi voluptates sed odio vero aperiam adipisci asperiores?
+                    Id, laudantium nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ut iure qui
+                    deleniti nemo labore ab ex nobis incidunt, beatae doloribus cum quaerat, itaque optio quasi nulla
+                    quam minus numquam.</P>
+            </div>
+            <div id="members">
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="">
+                </figure>
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="">
+                </figure>
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="">
+                </figure>
+            </div>
+        </section>
+        <section id="tourDates">
+            <h2>TOUR DATES</h2>
+            <p>Remember to book your tickets!</p>
+            <div id="month">
+                <p>September <span class="soldOut">Sold Out</span></p>
+                <p>October <span class="soldOut">Sold Out</span></p>
+                <div>
+                    <p>November <span id="three">3</span></p>
+                </div>
+            </div>
+            <div id="dates">
+                <div class="citys">
+                    <img src="./assets/img/newyork.jpg" alt="">
+                    <h3>New York</h3>
+                    <p>Sat 28 Nov 2016</p>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                    <button>Buy Tickets</button>
+                </div>
+                <div class="citys">
+                    <img src="./assets/img/paris.jpg" alt="">
+                    <h3>Paris</h3>
+                    <p>Sat 28 Nov 2016</p>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                    <button>Buy Tickets</button>
+                </div>
+                <div class="citys">
+                    <img src="./assets/img/sanfran.jpg" alt="">
+                    <h3>San Francisco</h3>
+                    <p>Sat 28 Nov 2016</p>
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                    <button>Buy Tickets</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+                <h2>CONTACT</h2>
+                <p>Fan? Drop a note!</p>
+                <div>
+                    <div id="infosContact">
+                        <p><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: +00 15151515</p>
+                        <p><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+                    </div>
+                    <form action="">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="message" placeholder="Message">
+                        <div>
+                            <input type="submit" value="SEND" name submited>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="contactImg">
+                <img src="./assets/img/map.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat-square"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <p>Powered By Enzo</p>
+        </div>
+    </footer>
+</body>
+
 </html>
