@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "lato", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul a, header nav form {
+    display: none;
+}
+
+header nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+header nav a:first-child {
+    display: inline;
+}
+
+header nav button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+#headerImg {
+    background-image: url(../img/la.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+}
+
+#headerImg p {
+    display: none;
+}
