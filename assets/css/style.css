@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: "lato", sans-serif;
+    box-sizing: border-box;
 }
 
 header nav {
@@ -35,11 +36,64 @@ header nav a:first-child {
     display: inline;
 }
 
-#burger {
+#ulBurger {
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#ulBurger a, #menuToggle{
+    overflow: hidden;
+}
+
+#ulBurger a {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+
+#menuToggle ~ #ulBurger a {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s;
+}
+
+#menuToggle:checked ~ #ulBurger a {
+    margin: 0;
+    width: 100%;
+    height: 3.5rem;
+    padding: .5rem 0;
+    transition: height 0.4s;
+}
+
+
+.menuButtonContainer {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuToggle {
+    display: none;
     background-color: black;
     border: none;
     color: white;
-    padding: 0.5rem 1rem;
+}
+
+.menuButton, .menuButton::before, .menuButton::after {
+    display: block;
+    position: absolute;
 }
 
 #headerImg {
@@ -245,6 +299,10 @@ footer p {
     display: flex;
     }
 
+    header nav form {
+        margin-right: 1rem;
+    }
+
     header nav form input, header nav form button {
         background-color: black;
         color: white;
@@ -255,8 +313,8 @@ footer p {
         outline: none;
     }
 
-    header nav form button {
-        margin-right: 1rem;
+    header nav div {
+        display: none;
     }
 
     #headerImg {
